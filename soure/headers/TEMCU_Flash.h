@@ -1,7 +1,7 @@
 #ifndef TEMCU_FLASH_H
 #define TEMCU_FLASH_H
 
-#include <ac780x.h>
+#include "TETypes.h"
 
 #define TEMCU_FLASH_BASE_ADDRESS            (0x08000000UL)
 #define TEMCU_FLASH_SIZE                    (0x00020000UL)

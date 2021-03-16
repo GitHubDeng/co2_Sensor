@@ -13,6 +13,7 @@
 ".\objects\tecrc16_modbus.o"
 ".\objects\tecom_cache.o"
 ".\objects\temem.o"
+".\objects\temem_cache.o"
 ".\objects\ac780x_adc.o"
 ".\objects\ac780x_ckgen.o"
 ".\objects\ac780x_dma.o"
@@ -25,6 +26,6 @@
 ".\objects\startup_ac780x.o"
 ".\objects\system_ac780x.o"
 --strict --scatter ".\Objects\CO2_Sensor.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\CO2_Sensor.map" -o .\Objects\CO2_Sensor.axf

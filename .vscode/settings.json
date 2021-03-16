@@ -1,22 +1,7 @@
 {
     "files.associations": {
-        "teevent.h": "c",
-        "temcu_timer.h": "c",
-        "compare": "c",
-        "memory": "c",
-        "tuple": "c",
-        "type_traits": "c",
-        "utility": "c",
-        "xmemory": "c",
-        "xtr1common": "c",
-        "xutility": "c",
-        "tetypes.h": "c",
-        "temcu_io.h": "c",
-        "tecrc16_modbus.h": "c",
-        "temcu_uart.h": "c",
-        "tesw_eeprom.h": "c",
-        "tecom_cache.h": "c",
         "temem_cache.h": "c",
-        "temcu_flash.h": "c"
+        "tetypes.h": "c",
+        "tesw_eeprom.h": "c"
     }
 }

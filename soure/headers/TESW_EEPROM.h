@@ -1,6 +1,7 @@
 #ifndef TEMCU_SWEEPROM_H
 #define TEMCU_SWEEPROM_H
-#include <stdint.h>
+
+#include "TETypes.h"
 
 typedef uint16_t TESWEEPROM_Addr;
 

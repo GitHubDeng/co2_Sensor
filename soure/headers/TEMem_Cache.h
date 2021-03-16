@@ -1,10 +1,14 @@
-#pragma once
+#ifndef TEMEM_CACHE_H
+#define TEMEM_CACHE_H
 
 #include "TETypes.h"
 
 typedef uint16_t TEMem_Addr;
 
 #define TEMEM_TAB_NUM   15
+
+#define TEMem_TabHead   TEMem_SerialNumH
+#define TEMem_TabTail   TEMem_KPAThreshold3
 
 typedef enum
 {
@@ -29,3 +33,5 @@ uint16_t TEMem_GetData(TEMem_TabType type);
 void TEMem_SetData(TEMem_TabType type,uint16_t value);
 
 TEMem_Addr TEMem_GetAddr(TEMem_TabType type);
+
+#endif

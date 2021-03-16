@@ -2,29 +2,27 @@
 
 typedef struct
 {
-    uint16_t _syn           : 1;
-    uint16_t _update        : 1;
-    const uint16_t _addr    : 14;
+    const uint16_t _addr;
     uint16_t _data;
 }TEMem_NVMTabUnit;
 
 TEMem_NVMTabUnit TEMem_NVMTab[TEMEM_TAB_NUM] = 
 {
-    {._syn = 0,._update = 0,._addr = 0x0001,._data = 0},     //设备编码H
-    {._syn = 0,._update = 0,._addr = 0x0002,._data = 0},     //设备编码L
-    {._syn = 0,._update = 0,._addr = 0x0003,._data = 0},     //工作模式
-    {._syn = 0,._update = 0,._addr = 0x0004,._data = 0},     //A模式采样率
-    {._syn = 0,._update = 0,._addr = 0x0005,._data = 0},     //B模式采样率
-    {._syn = 0,._update = 0,._addr = 0x0006,._data = 0},     //单点测试PPM值
-    {._syn = 0,._update = 0,._addr = 0x0007,._data = 0},     //ABC校准采样率
-    {._syn = 0,._update = 0,._addr = 0x0008,._data = 0},     //ABC定值计数
-    {._syn = 0,._update = 0,._addr = 0x0009,._data = 0},     //ABC采样计数
-    {._syn = 0,._update = 0,._addr = 0x0010,._data = 0},     //气压H
-    {._syn = 0,._update = 0,._addr = 0x0011,._data = 0},     //气压L
-    {._syn = 0,._update = 0,._addr = 0x0012,._data = 0},     //KPA阈值0
-    {._syn = 0,._update = 0,._addr = 0x0013,._data = 0},     //KPA阈值1
-    {._syn = 0,._update = 0,._addr = 0x0014,._data = 0},     //KPA阈值2
-    {._syn = 0,._update = 0,._addr = 0x0015,._data = 0}      //KPA阈值3
+    {0x0001,0},     //0 设备编码H
+    {0x0002,0},     //1 设备编码L
+    {0x0003,0},     //2 工作模式
+    {0x0004,0},     //3 A模式采样率
+    {0x0005,0},     //4 B模式采样率
+    {0x0006,0},     //5 单点测试PPM值
+    {0x0007,0},     //6 ABC校准采样率
+    {0x0008,0},     //7 ABC定值计数
+    {0x0009,0},     //8 ABC采样计数
+    {0x0010,0},     //9 气压H
+    {0x0011,0},     //10 气压L
+    {0x0012,0},     //11 KPA阈值0
+    {0x0013,0},     //12 KPA阈值1
+    {0x0014,0},     //13 KPA阈值2
+    {0x0015,0}      //14 KPA阈值3
 };
 
 
@@ -46,7 +44,6 @@ TEMem_Addr TEMem_GetAddr(TEMem_TabType type)
 void TEMem_SynData(TEMem_TabType type,uint16_t value)
 {
     TEMem_NVMTab[type]._data = value;
-    TEMem_NVMTab[type]._syn = 1;
 }
 
 

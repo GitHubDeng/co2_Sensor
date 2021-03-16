@@ -418,7 +418,8 @@ static void flashcheckEnd(TEFLASH_Addr addr,TEMCU_FLASH_StatusType res)
 
 TESW_EEPROM_StatusType TESW_EEPROM_Read(TESWEEPROM_Addr addr,uint16_t *data)
 {  
-    for(TEFLASH_Addr temp_addr = st_eeprom_s.program->insertAddr-SWEEPROM_SIZE_DATA;
+		uint32_t temp_addr;
+    for(temp_addr = st_eeprom_s.program->insertAddr-SWEEPROM_SIZE_DATA;
     temp_addr >= st_eeprom_s.program->statrtAddr;
     temp_addr -= SWEEPROM_SIZE_DATA)
     {
