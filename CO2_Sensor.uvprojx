@@ -535,6 +535,16 @@
               <FileType>5</FileType>
               <FilePath>.\soure\headers\TECrc16_modbus.h</FilePath>
             </File>
+            <File>
+              <FileName>TEMem.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\soure\headers\TEMem.h</FilePath>
+            </File>
+            <File>
+              <FileName>TEMem_Cache.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\soure\headers\TEMem_Cache.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -565,6 +575,18 @@
         </Group>
         <Group>
           <GroupName>mem</GroupName>
+          <Files>
+            <File>
+              <FileName>TEMem.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\soure\CO2\mem\TEMem.c</FilePath>
+            </File>
+            <File>
+              <FileName>TEMem_Cache.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\soure\CO2\mem\TEMem_Cache.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>samp</GroupName>

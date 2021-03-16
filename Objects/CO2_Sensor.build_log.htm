@@ -21,34 +21,35 @@ Target DLL:      Segger\JL2CM3.dll V2.99.19.0
 Dialog DLL:      TARMCM1.DLL V1.9.0.0
  
 <h2>Project:</h2>
-c:\Users\yangxiaolu\Desktop\workspace\co2_Sensor\CO2_Sensor.uvprojx
-Project File Date:  03/15/2021
+C:\Users\yangxiaolu\Desktop\workspace\co2_Sensor\CO2_Sensor.uvprojx
+Project File Date:  03/16/2021
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Program Files\Keil_v5\ARM\ARMCC\Bin'
-Build target 'Target 1'
-compiling TEMCU_ADC.c...
+Rebuild target 'Target 1'
 compiling TEMCU_Flash.c...
+compiling TEMCU_ADC.c...
 compiling TEMCU_DMA.c...
-compiling TEMCU_Timer.c...
-compiling TEMCU_IOInit_AC7801x_LQFP48.c...
 compiling TEMCU_NVIC.c...
+compiling TEMCU_IOInit_AC7801x_LQFP48.c...
+compiling TEMCU_Timer.c...
 compiling TEEvent.c...
-compiling TESW_EEPROM.c...
 compiling TEMCU_Uart.c...
+compiling TESW_EEPROM.c...
 compiling TECom.c...
-compiling TECrc16_modbus.c...
 compiling main.c...
+compiling TECrc16_modbus.c...
+compiling TEMem.c...
 compiling TECom_Cache.c...
-compiling ac780x_ckgen.c...
 compiling ac780x_adc.c...
 compiling ac780x_dma.c...
+compiling ac780x_ckgen.c...
 compiling ac780x_eflash.c...
 compiling ac780x_spm.c...
 compiling ac780x_gpio.c...
 compiling ac780x_timer.c...
-compiling ac780x_wdg.c...
 compiling ac780x_uart.c...
+compiling ac780x_wdg.c...
 assembling startup_ac780x.s...
 compiling system_ac780x.c...
 linking...
@@ -65,22 +66,22 @@ Package Vendor: ARM
 
 Package Vendor: AutoChips
                 http://fex.autochips.com:90/download/CMSIS_PACK/AC7801/AutoChips.AC780x_DFP.1.0.3.pack
-                AutoChips::Device:ATC Drivers:DMA:1.0.0
+                AutoChips::Device:ATC Drivers:GPIO:1.0.0
                 AutoChips AC780x Series Device Support and Examples
-   * Component: DMA Version: 1.0.0
-   * Component: CKGEN Version: 1.0.0
-   * Component: ADC Version: 1.0.0
    * Component: GPIO Version: 1.0.0
    * Component: eFlash Version: 1.0.0
    * Component: TIMER Version: 1.0.0
    * Component: UART Version: 1.0.0
-   * Component: WDG Version: 1.0.0
    * Component: SPM Version: 1.0.0
+   * Component: WDG Version: 1.0.0
    * Component: Startup Version: 1.0.0
+   * Component: CKGEN Version: 1.0.0
+   * Component: ADC Version: 1.0.0
+   * Component: DMA Version: 1.0.0
 
 <h2>Collection of Component include folders:</h2>
-  c:\Users\yangxiaolu\Desktop\workspace\co2_Sensor\RTE
-  c:\Users\yangxiaolu\Desktop\workspace\co2_Sensor\RTE\Device\AC78013MDQA
+  C:\Users\yangxiaolu\Desktop\workspace\co2_Sensor\RTE
+  C:\Users\yangxiaolu\Desktop\workspace\co2_Sensor\RTE\Device\AC78013MDQA
   C:\Program Files\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include
   C:\Program Files\Keil_v5\ARM\PACK\AutoChips\AC780x_DFP\1.0.3\ATC_Driver\inc
   C:\Program Files\Keil_v5\ARM\PACK\AutoChips\AC780x_DFP\1.0.3\Device\Include
@@ -89,33 +90,19 @@ Package Vendor: AutoChips
 
    * Component: ARM::CMSIS:CORE:5.0.2
 
-   * Component: AutoChips::Device:ATC Drivers:DMA:1.0.0
-      Include file:  ATC_Driver\inc\ac780x_dma_reg.h
-      Include file:  ATC_Driver\inc\ac780x_dma.h
-      Source file:   ATC_Driver\src\ac780x_dma.c
-
-   * Component: AutoChips::Device:ATC Drivers:CKGEN:1.0.0
-      Include file:  ATC_Driver\inc\ac780x_ckgen.h
-      Source file:   ATC_Driver\src\ac780x_ckgen.c
-
-   * Component: AutoChips::Device:ATC Drivers:ADC:1.0.0
-      Include file:  ATC_Driver\inc\ac780x_adc_reg.h
-      Source file:   ATC_Driver\src\ac780x_adc.c
-      Include file:  ATC_Driver\inc\ac780x_adc.h
-
    * Component: AutoChips::Device:ATC Drivers:GPIO:1.0.0
-      Include file:  ATC_Driver\inc\ac780x_gpio.h
       Include file:  ATC_Driver\inc\ac780x_gpio_reg.h
+      Include file:  ATC_Driver\inc\ac780x_gpio.h
       Source file:   ATC_Driver\src\ac780x_gpio.c
 
    * Component: AutoChips::Device:ATC Drivers:eFlash:1.0.0
+      Source file:   ATC_Driver\src\ac780x_eflash.c
       Include file:  ATC_Driver\inc\ac780x_eflash.h
       Include file:  ATC_Driver\inc\ac780x_eflash_reg.h
-      Source file:   ATC_Driver\src\ac780x_eflash.c
 
    * Component: AutoChips::Device:ATC Drivers:TIMER:1.0.0
-      Include file:  ATC_Driver\inc\ac780x_timer.h
       Include file:  ATC_Driver\inc\ac780x_timer_reg.h
+      Include file:  ATC_Driver\inc\ac780x_timer.h
       Source file:   ATC_Driver\src\ac780x_timer.c
 
    * Component: AutoChips::Device:ATC Drivers:UART:1.0.0
@@ -123,21 +110,35 @@ Package Vendor: AutoChips
       Include file:  ATC_Driver\inc\ac780x_uart_reg.h
       Source file:   ATC_Driver\src\ac780x_uart.c
 
-   * Component: AutoChips::Device:ATC Drivers:WDG:1.0.0
-      Include file:  ATC_Driver\inc\ac780x_wdg.h
-      Source file:   ATC_Driver\src\ac780x_wdg.c
-      Include file:  ATC_Driver\inc\ac780x_wdg_reg.h
-
    * Component: AutoChips::Device:ATC Drivers:SPM:1.0.0
       Include file:  ATC_Driver\inc\ac780x_spm.h
       Source file:   ATC_Driver\src\ac780x_spm.c
 
+   * Component: AutoChips::Device:ATC Drivers:WDG:1.0.0
+      Include file:  ATC_Driver\inc\ac780x_wdg_reg.h
+      Source file:   ATC_Driver\src\ac780x_wdg.c
+      Include file:  ATC_Driver\inc\ac780x_wdg.h
+
    * Component: AutoChips::Device:Startup:1.0.0
-      Source file:   Device\Source\ARM\startup_ac780x.s
-      Source file:   Device\Source\system_ac780x.c
-      Include file:  Device\system_ac780x.h
       Include file:  Device\device_assert.h
-Build Time Elapsed:  00:00:08
+      Include file:  Device\system_ac780x.h
+      Source file:   Device\Source\system_ac780x.c
+      Source file:   Device\Source\ARM\startup_ac780x.s
+
+   * Component: AutoChips::Device:ATC Drivers:CKGEN:1.0.0
+      Include file:  ATC_Driver\inc\ac780x_ckgen.h
+      Source file:   ATC_Driver\src\ac780x_ckgen.c
+
+   * Component: AutoChips::Device:ATC Drivers:ADC:1.0.0
+      Include file:  ATC_Driver\inc\ac780x_adc_reg.h
+      Include file:  ATC_Driver\inc\ac780x_adc.h
+      Source file:   ATC_Driver\src\ac780x_adc.c
+
+   * Component: AutoChips::Device:ATC Drivers:DMA:1.0.0
+      Include file:  ATC_Driver\inc\ac780x_dma.h
+      Include file:  ATC_Driver\inc\ac780x_dma_reg.h
+      Source file:   ATC_Driver\src\ac780x_dma.c
+Build Time Elapsed:  00:00:10
 </pre>
 </body>
 </html>

@@ -417,8 +417,21 @@ static void flashcheckEnd(TEFLASH_Addr addr,TEMCU_FLASH_StatusType res)
 }
 
 TESW_EEPROM_StatusType TESW_EEPROM_Read(TESWEEPROM_Addr addr,uint16_t *data)
-{
-    return TESWEEPROM_STATUS_OK;
+{  
+    for(TEFLASH_Addr temp_addr = st_eeprom_s.program->insertAddr-SWEEPROM_SIZE_DATA;
+    temp_addr >= st_eeprom_s.program->statrtAddr;
+    temp_addr -= SWEEPROM_SIZE_DATA)
+    {
+        TE_SWEEPROM_Data temp_data;
+        temp_data._w = TEMCU_Flash_Read(temp_addr);
+        if(addr == temp_data.type._addr)
+        {
+            *data = temp_data.type._data;
+            return TESWEEPROM_STATUS_OK;
+        }
+    }
+    *data = 0;
+    return TESWEEPROM_STATUS_READ_EMPTY;
 }
 
 TESW_EEPROM_StatusType TESW_EEPROM_Write(TESWEEPROM_Addr addr,uint16_t data)
@@ -454,4 +467,5 @@ void TEMainThread_SWEEPRom(void)
 {
     checkThread();
     copyThread();
+    TEMainThread_Flash();
 }

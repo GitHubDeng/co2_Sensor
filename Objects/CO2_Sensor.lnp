@@ -12,6 +12,7 @@
 ".\objects\tecom.o"
 ".\objects\tecrc16_modbus.o"
 ".\objects\tecom_cache.o"
+".\objects\temem.o"
 ".\objects\ac780x_adc.o"
 ".\objects\ac780x_ckgen.o"
 ".\objects\ac780x_dma.o"

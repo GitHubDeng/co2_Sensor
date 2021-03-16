@@ -12,7 +12,7 @@ union comBufTag
     uint8_t _b[TEComBuf_Len];
     struct BufType
     {
-        uint16_t _dataLen;    //16bit用于字对齐
+        uint16_t _dataLen;    
         uint16_t _crc;
         union BufDataType
         {
