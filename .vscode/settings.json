@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "teevent.h": "c",
+        "temcu_timer.h": "c",
+        "compare": "c",
+        "memory": "c",
+        "tuple": "c",
+        "type_traits": "c",
+        "utility": "c",
+        "xmemory": "c",
+        "xtr1common": "c",
+        "xutility": "c",
+        "tetypes.h": "c",
+        "temcu_io.h": "c",
+        "tecrc16_modbus.h": "c",
+        "temcu_uart.h": "c"
+    }
+}
