@@ -2,6 +2,9 @@
     "files.associations": {
         "temem_cache.h": "c",
         "tetypes.h": "c",
-        "tesw_eeprom.h": "c"
+        "tesw_eeprom.h": "c",
+        "temem.h": "c",
+        "tecom_cache.h": "c",
+        "teevent.h": "c"
     }
 }

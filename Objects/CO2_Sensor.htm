@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\CO2_Sensor.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\CO2_Sensor.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Mar 17 00:55:40 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Wed Mar 17 16:05:18 2021
 <BR><P>
 <H3>Maximum Stack Usage =        124 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -11,1037 +11,1332 @@ __rt_entry_main &rArr; main &rArr; TECom_Init &rArr; TEMCU_Uart_Init &rArr; UART
 <P>
 <H3>
 Mutually Recursive functions
-</H3> <LI><a href="#[7]">HardFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[7]">HardFault_Handler</a><BR>
- <LI><a href="#[8]">SVC_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[8]">SVC_Handler</a><BR>
- <LI><a href="#[9]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[9]">PendSV_Handler</a><BR>
- <LI><a href="#[a]">SysTick_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[a]">SysTick_Handler</a><BR>
- <LI><a href="#[f]">ACMP0_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[f]">ACMP0_IRQHandler</a><BR>
+</H3> <LI><a href="#[d]">HardFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[d]">HardFault_Handler</a><BR>
+ <LI><a href="#[e]">SVC_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[e]">SVC_Handler</a><BR>
+ <LI><a href="#[f]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[f]">PendSV_Handler</a><BR>
+ <LI><a href="#[10]">SysTick_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[10]">SysTick_Handler</a><BR>
+ <LI><a href="#[15]">ACMP0_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[15]">ACMP0_IRQHandler</a><BR>
 </UL>
 <P>
 <H3>
 Function Pointers
 </H3><UL>
- <LI><a href="#[f]">ACMP0_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[24]">ADC0_IRQHandler</a> from ac780x_adc.o(i.ADC0_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[23]">CAN0_Handler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[18]">DMA0_Channel0_IRQHandler</a> from ac780x_dma.o(i.DMA0_Channel0_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[19]">DMA0_Channel1_IRQHandler</a> from ac780x_dma.o(i.DMA0_Channel1_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[1a]">DMA0_Channel2_IRQHandler</a> from ac780x_dma.o(i.DMA0_Channel2_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[1b]">DMA0_Channel3_IRQHandler</a> from ac780x_dma.o(i.DMA0_Channel3_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[25]">ECC_SRAM_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[26]">EXTI0_IRQHandler</a> from ac780x_gpio.o(i.EXTI0_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[27]">EXTI1_IRQHandler</a> from ac780x_gpio.o(i.EXTI1_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[28]">EXTI2_IRQHandler</a> from ac780x_gpio.o(i.EXTI2_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[29]">EXTI3_8_IRQHandler</a> from ac780x_gpio.o(i.EXTI3_8_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[2a]">EXTI9_15_IRQHandler</a> from ac780x_gpio.o(i.EXTI9_15_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[7]">HardFault_Handler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[16]">I2C0_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[17]">I2C1_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[6]">NMI_Handler</a> from ac780x_spm.o(i.NMI_Handler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[21]">PVD_IRQHandler</a> from ac780x_spm.o(i.PVD_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[b]">PWDT0_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[c]">PWDT1_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[d]">PWM0_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[e]">PWM1_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[9]">PendSV_Handler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[20]">RTC_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[5]">Reset_Handler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[14]">SPI0_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[15]">SPI1_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[22]">SPM_IRQHandler</a> from ac780x_spm.o(i.SPM_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[8]">SVC_Handler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[a]">SysTick_Handler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[2b]">SystemInit</a> from system_ac780x.o(i.SystemInit) referenced from startup_ac780x.o(.text)
- <LI><a href="#[30]">TEEvent_Trigger1MS</a> from teevent.o(i.TEEvent_Trigger1MS) referenced from main.o(i.main)
- <LI><a href="#[31]">TERevFrame_Handle</a> from tecom.o(i.TERevFrame_Handle) referenced from tecom.o(.data)
- <LI><a href="#[1c]">TIMER_Channel0_IRQHandler</a> from ac780x_timer.o(i.TIMER_Channel0_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[1d]">TIMER_Channel1_IRQHandler</a> from ac780x_timer.o(i.TIMER_Channel1_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[1e]">TIMER_Channel2_IRQHandler</a> from ac780x_timer.o(i.TIMER_Channel2_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[1f]">TIMER_Channel3_IRQHandler</a> from ac780x_timer.o(i.TIMER_Channel3_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[2e]">Timer_Task</a> from temcu_timer.o(i.Timer_Task) referenced from temcu_timer.o(i.TEMCU_Timer_Init)
- <LI><a href="#[10]">UART0_IRQHandler</a> from ac780x_uart.o(i.UART0_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[11]">UART1_IRQHandler</a> from ac780x_uart.o(i.UART1_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[12]">UART2_IRQHandler</a> from ac780x_uart.o(i.UART2_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[2f]">Uart2_Task</a> from temcu_uart.o(i.Uart2_Task) referenced from temcu_uart.o(i.TEMCU_Uart_Init)
- <LI><a href="#[13]">WDG_IRQHandler</a> from ac780x_wdg.o(i.WDG_IRQHandler) referenced from startup_ac780x.o(RESET)
- <LI><a href="#[32]">__main</a> from __main.o(!!!main) referenced from startup_ac780x.o(.text)
- <LI><a href="#[2d]">revData</a> from tecom.o(i.revData) referenced from tecom.o(i.TECom_Init)
+ <LI><a href="#[15]">ACMP0_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[2a]">ADC0_IRQHandler</a> from ac780x_adc.o(i.ADC0_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[29]">CAN0_Handler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[1e]">DMA0_Channel0_IRQHandler</a> from ac780x_dma.o(i.DMA0_Channel0_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[1f]">DMA0_Channel1_IRQHandler</a> from ac780x_dma.o(i.DMA0_Channel1_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[20]">DMA0_Channel2_IRQHandler</a> from ac780x_dma.o(i.DMA0_Channel2_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[21]">DMA0_Channel3_IRQHandler</a> from ac780x_dma.o(i.DMA0_Channel3_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[2b]">ECC_SRAM_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[2c]">EXTI0_IRQHandler</a> from ac780x_gpio.o(i.EXTI0_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[2d]">EXTI1_IRQHandler</a> from ac780x_gpio.o(i.EXTI1_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[2e]">EXTI2_IRQHandler</a> from ac780x_gpio.o(i.EXTI2_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[2f]">EXTI3_8_IRQHandler</a> from ac780x_gpio.o(i.EXTI3_8_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[30]">EXTI9_15_IRQHandler</a> from ac780x_gpio.o(i.EXTI9_15_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[d]">HardFault_Handler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[1c]">I2C0_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[1d]">I2C1_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[c]">NMI_Handler</a> from ac780x_spm.o(i.NMI_Handler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[27]">PVD_IRQHandler</a> from ac780x_spm.o(i.PVD_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[11]">PWDT0_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[12]">PWDT1_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[13]">PWM0_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[14]">PWM1_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[f]">PendSV_Handler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[26]">RTC_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[b]">Reset_Handler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[1a]">SPI0_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[1b]">SPI1_IRQHandler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[28]">SPM_IRQHandler</a> from ac780x_spm.o(i.SPM_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[e]">SVC_Handler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[10]">SysTick_Handler</a> from startup_ac780x.o(.text) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[31]">SystemInit</a> from system_ac780x.o(i.SystemInit) referenced from startup_ac780x.o(.text)
+ <LI><a href="#[39]">TEEvent_Trigger1MS</a> from teevent.o(i.TEEvent_Trigger1MS) referenced from main.o(i.main)
+ <LI><a href="#[7]">TERevFrame_Handle</a> from tecom.o(i.TERevFrame_Handle) referenced 2 times from tecom.o(.data)
+ <LI><a href="#[22]">TIMER_Channel0_IRQHandler</a> from ac780x_timer.o(i.TIMER_Channel0_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[23]">TIMER_Channel1_IRQHandler</a> from ac780x_timer.o(i.TIMER_Channel1_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[24]">TIMER_Channel2_IRQHandler</a> from ac780x_timer.o(i.TIMER_Channel2_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[25]">TIMER_Channel3_IRQHandler</a> from ac780x_timer.o(i.TIMER_Channel3_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[34]">Timer_Task</a> from temcu_timer.o(i.Timer_Task) referenced from temcu_timer.o(i.TEMCU_Timer_Init)
+ <LI><a href="#[16]">UART0_IRQHandler</a> from ac780x_uart.o(i.UART0_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[17]">UART1_IRQHandler</a> from ac780x_uart.o(i.UART1_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[18]">UART2_IRQHandler</a> from ac780x_uart.o(i.UART2_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[35]">Uart2_Task</a> from temcu_uart.o(i.Uart2_Task) referenced from temcu_uart.o(i.TEMCU_Uart_Init)
+ <LI><a href="#[19]">WDG_IRQHandler</a> from ac780x_wdg.o(i.WDG_IRQHandler) referenced from startup_ac780x.o(RESET)
+ <LI><a href="#[3a]">__main</a> from __main.o(!!!main) referenced from startup_ac780x.o(.text)
+ <LI><a href="#[37]">flashEraseEnd</a> from tesw_eeprom.o(i.flashEraseEnd) referenced from tesw_eeprom.o(i.TESW_EEPROM_Init)
+ <LI><a href="#[36]">flashWriteEnd</a> from tesw_eeprom.o(i.flashWriteEnd) referenced from tesw_eeprom.o(i.TESW_EEPROM_Init)
+ <LI><a href="#[38]">flashcheckEnd</a> from tesw_eeprom.o(i.flashcheckEnd) referenced from tesw_eeprom.o(i.TESW_EEPROM_Init)
+ <LI><a href="#[8]">memDriverThread_Handle</a> from temem.o(i.memDriverThread_Handle) referenced 2 times from temem.o(.data)
+ <LI><a href="#[a]">memSynThread_Handle</a> from temem.o(i.memSynThread_Handle) referenced 2 times from temem.o(.data)
+ <LI><a href="#[9]">memUpdateThread_Handle</a> from temem.o(i.memUpdateThread_Handle) referenced 2 times from temem.o(.data)
+ <LI><a href="#[33]">revData</a> from tecom.o(i.revData) referenced from tecom.o(i.TECom_Init)
+ <LI><a href="#[6]">synFromMemThread_Handle</a> from teco2_core.o(i.synFromMemThread_Handle) referenced 2 times from teco2_core.o(.data)
+ <LI><a href="#[5]">synToMemThread_Handle</a> from teco2_core.o(i.synToMemThread_Handle) referenced 2 times from teco2_core.o(.data)
 </UL>
 <P>
 <H3>
 Global Symbols
 </H3>
-<P><STRONG><a name="[32]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
-<BR><BR>[Calls]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
-<LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<P><STRONG><a name="[3a]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
+<BR><BR>[Calls]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[33]"></a>__scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
-<BR><BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<P><STRONG><a name="[3b]"></a>__scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
+<BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
 </UL>
 
-<P><STRONG><a name="[35]"></a>__scatterload_rt2</STRONG> (Thumb, 52 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<P><STRONG><a name="[3d]"></a>__scatterload_rt2</STRONG> (Thumb, 52 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
 </UL>
 
-<P><STRONG><a name="[93]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[bb]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
-<P><STRONG><a name="[94]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[bc]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
-<P><STRONG><a name="[36]"></a>__scatterload_copy</STRONG> (Thumb, 26 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
-</UL>
-<BR>[Called By]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
-</UL>
+<P><STRONG><a name="[bd]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
 
-<P><STRONG><a name="[95]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
-
-<P><STRONG><a name="[3a]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
+<P><STRONG><a name="[41]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
 </UL>
 
-<P><STRONG><a name="[96]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+<P><STRONG><a name="[be]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
 
-<P><STRONG><a name="[97]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+<P><STRONG><a name="[bf]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
 
-<P><STRONG><a name="[98]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+<P><STRONG><a name="[c0]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
 
-<P><STRONG><a name="[99]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+<P><STRONG><a name="[c1]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
 
-<P><STRONG><a name="[9a]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
+<P><STRONG><a name="[c2]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
 
-<P><STRONG><a name="[9b]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
+<P><STRONG><a name="[c3]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
 
-<P><STRONG><a name="[9c]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
+<P><STRONG><a name="[c4]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
 
-<P><STRONG><a name="[9d]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+<P><STRONG><a name="[c5]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
 
-<P><STRONG><a name="[9e]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
+<P><STRONG><a name="[c6]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
 
-<P><STRONG><a name="[9f]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+<P><STRONG><a name="[c7]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
 
-<P><STRONG><a name="[a0]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+<P><STRONG><a name="[c8]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
 
-<P><STRONG><a name="[a1]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+<P><STRONG><a name="[c9]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
 
-<P><STRONG><a name="[a2]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+<P><STRONG><a name="[ca]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
 
-<P><STRONG><a name="[a3]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+<P><STRONG><a name="[cb]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
 
-<P><STRONG><a name="[a4]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+<P><STRONG><a name="[cc]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
 
-<P><STRONG><a name="[a5]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
+<P><STRONG><a name="[cd]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
 
-<P><STRONG><a name="[a6]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
+<P><STRONG><a name="[ce]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
 
-<P><STRONG><a name="[a7]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
+<P><STRONG><a name="[cf]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
 
-<P><STRONG><a name="[a8]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+<P><STRONG><a name="[d0]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
 
-<P><STRONG><a name="[a9]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
+<P><STRONG><a name="[d1]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
 
-<P><STRONG><a name="[aa]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
+<P><STRONG><a name="[d2]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
 
-<P><STRONG><a name="[3f]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
+<P><STRONG><a name="[46]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
 </UL>
 
-<P><STRONG><a name="[ab]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
+<P><STRONG><a name="[d3]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
 
-<P><STRONG><a name="[ac]"></a>__rt_lib_shutdown_fini_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
+<P><STRONG><a name="[d4]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000007))
 
-<P><STRONG><a name="[ad]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))
+<P><STRONG><a name="[d5]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
 
-<P><STRONG><a name="[ae]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000011))
+<P><STRONG><a name="[d6]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000010))
 
-<P><STRONG><a name="[af]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000012))
+<P><STRONG><a name="[d7]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A))
 
-<P><STRONG><a name="[b0]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
+<P><STRONG><a name="[d8]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
 
-<P><STRONG><a name="[b1]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))
+<P><STRONG><a name="[d9]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
 
-<P><STRONG><a name="[b2]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
-
-<P><STRONG><a name="[34]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
-<LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+<P><STRONG><a name="[3c]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
 </UL>
 
-<P><STRONG><a name="[b3]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+<P><STRONG><a name="[da]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
 
-<P><STRONG><a name="[37]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry4.o(.ARM.Collect$$rtentry$$00000004))
+<P><STRONG><a name="[3e]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry4.o(.ARM.Collect$$rtentry$$00000004))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_sh &rArr; __user_setup_stackheap
 </UL>
-<BR>[Calls]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+<BR>[Calls]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[39]"></a>__rt_entry_li</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
-<BR><BR>[Calls]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
+<P><STRONG><a name="[40]"></a>__rt_entry_li</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
+<BR><BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
 </UL>
 
-<P><STRONG><a name="[b4]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+<P><STRONG><a name="[db]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
-<P><STRONG><a name="[3b]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
+<P><STRONG><a name="[42]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
 <BR><BR>[Stack]<UL><LI>Max Depth = 124 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_main &rArr; main &rArr; TECom_Init &rArr; TEMCU_Uart_Init &rArr; UART_Init &rArr; UART_SetBaudrate &rArr; __aeabi_fdiv
 </UL>
-<BR>[Calls]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+<BR>[Calls]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 </UL>
 
-<P><STRONG><a name="[b5]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+<P><STRONG><a name="[dc]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
 
-<P><STRONG><a name="[4a]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
-</UL>
-
-<P><STRONG><a name="[3e]"></a>__rt_exit_ls</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
-<BR><BR>[Calls]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
+<P><STRONG><a name="[51]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 </UL>
 
-<P><STRONG><a name="[b6]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
-
-<P><STRONG><a name="[40]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
-<BR><BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+<P><STRONG><a name="[45]"></a>__rt_exit_ls</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
+<BR><BR>[Calls]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
 </UL>
 
-<P><STRONG><a name="[5]"></a>Reset_Handler</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
-</UL>
-<P><STRONG><a name="[7]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
-</UL>
-<BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
-</UL>
-<P><STRONG><a name="[8]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
-</UL>
-<P><STRONG><a name="[9]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
-</UL>
-<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
-</UL>
-<P><STRONG><a name="[a]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
-</UL>
-<BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
-</UL>
-<P><STRONG><a name="[f]"></a>ACMP0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ACMP0_IRQHandler
-</UL>
-<BR>[Called By]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ACMP0_IRQHandler
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
-</UL>
-<P><STRONG><a name="[23]"></a>CAN0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
-</UL>
-<P><STRONG><a name="[25]"></a>ECC_SRAM_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
-</UL>
-<P><STRONG><a name="[16]"></a>I2C0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
-</UL>
-<P><STRONG><a name="[17]"></a>I2C1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
-</UL>
-<P><STRONG><a name="[b]"></a>PWDT0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
-</UL>
-<P><STRONG><a name="[c]"></a>PWDT1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
-</UL>
-<P><STRONG><a name="[d]"></a>PWM0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
-</UL>
-<P><STRONG><a name="[e]"></a>PWM1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
-</UL>
-<P><STRONG><a name="[20]"></a>RTC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
-</UL>
-<P><STRONG><a name="[14]"></a>SPI0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
-</UL>
-<P><STRONG><a name="[15]"></a>SPI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
-</UL>
-<P><STRONG><a name="[48]"></a>__user_initial_stackheap</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+<P><STRONG><a name="[dd]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+
+<P><STRONG><a name="[47]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
 </UL>
 
-<P><STRONG><a name="[b7]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[b]"></a>Reset_Handler</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
+</UL>
+<P><STRONG><a name="[d]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
+</UL>
+<P><STRONG><a name="[e]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
+</UL>
+<P><STRONG><a name="[f]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
+</UL>
+<P><STRONG><a name="[10]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
+</UL>
+<P><STRONG><a name="[15]"></a>ACMP0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ACMP0_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ACMP0_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
+</UL>
+<P><STRONG><a name="[29]"></a>CAN0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
+</UL>
+<P><STRONG><a name="[2b]"></a>ECC_SRAM_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
+</UL>
+<P><STRONG><a name="[1c]"></a>I2C0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
+</UL>
+<P><STRONG><a name="[1d]"></a>I2C1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
+</UL>
+<P><STRONG><a name="[11]"></a>PWDT0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
+</UL>
+<P><STRONG><a name="[12]"></a>PWDT1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
+</UL>
+<P><STRONG><a name="[13]"></a>PWM0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
+</UL>
+<P><STRONG><a name="[14]"></a>PWM1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
+</UL>
+<P><STRONG><a name="[26]"></a>RTC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
+</UL>
+<P><STRONG><a name="[1a]"></a>SPI0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
+</UL>
+<P><STRONG><a name="[1b]"></a>SPI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
+</UL>
+<P><STRONG><a name="[4f]"></a>__user_initial_stackheap</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, startup_ac780x.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
 
-<P><STRONG><a name="[b8]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[de]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
-<P><STRONG><a name="[b9]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[df]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
-<P><STRONG><a name="[86]"></a>__aeabi_fdiv</STRONG> (Thumb, 0 bytes, Stack size 20 bytes, fdiv.o(.text))
+<P><STRONG><a name="[e0]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[a0]"></a>__aeabi_fdiv</STRONG> (Thumb, 0 bytes, Stack size 20 bytes, fdiv.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = __aeabi_fdiv
 </UL>
-<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetBaudrate
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetBaudrate
 </UL>
 
-<P><STRONG><a name="[43]"></a>_fdiv</STRONG> (Thumb, 334 bytes, Stack size 20 bytes, fdiv.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_frdiv
+<P><STRONG><a name="[4a]"></a>_fdiv</STRONG> (Thumb, 334 bytes, Stack size 20 bytes, fdiv.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_frdiv
 </UL>
 
-<P><STRONG><a name="[42]"></a>_frdiv</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, fdiv.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fdiv
+<P><STRONG><a name="[49]"></a>_frdiv</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, fdiv.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fdiv
 </UL>
 
-<P><STRONG><a name="[8a]"></a>__aeabi_f2uiz</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ffixui.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetBaudrate
+<P><STRONG><a name="[a4]"></a>__aeabi_f2uiz</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ffixui.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetBaudrate
 </UL>
 
-<P><STRONG><a name="[ba]"></a>_ffixu</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, ffixui.o(.text), UNUSED)
+<P><STRONG><a name="[e1]"></a>_ffixu</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, ffixui.o(.text), UNUSED)
 
-<P><STRONG><a name="[87]"></a>__aeabi_f2ulz</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, ffixul.o(.text))
+<P><STRONG><a name="[a1]"></a>__aeabi_f2ulz</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, ffixul.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_f2ulz
 </UL>
-<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetBaudrate
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetBaudrate
 </UL>
 
-<P><STRONG><a name="[bb]"></a>_ll_ufrom_f</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, ffixul.o(.text), UNUSED)
+<P><STRONG><a name="[e2]"></a>_ll_ufrom_f</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, ffixul.o(.text), UNUSED)
 
-<P><STRONG><a name="[45]"></a>__aeabi_i2f_normalise</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, fflti.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
-<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f
+<P><STRONG><a name="[4c]"></a>__aeabi_i2f_normalise</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, fflti.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
+<LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f
 </UL>
 
-<P><STRONG><a name="[44]"></a>__aeabi_i2f</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, fflti.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f_normalise
+<P><STRONG><a name="[4b]"></a>__aeabi_i2f</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, fflti.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f_normalise
 </UL>
 
-<P><STRONG><a name="[bc]"></a>_fflt</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, fflti.o(.text), UNUSED)
+<P><STRONG><a name="[e3]"></a>_fflt</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, fflti.o(.text), UNUSED)
 
-<P><STRONG><a name="[46]"></a>__aeabi_ui2f</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, fflti.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f_normalise
+<P><STRONG><a name="[4d]"></a>__aeabi_ui2f</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, fflti.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f_normalise
 </UL>
-<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetBaudrate
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetBaudrate
 </UL>
 
-<P><STRONG><a name="[bd]"></a>_ffltu</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, fflti.o(.text), UNUSED)
+<P><STRONG><a name="[e4]"></a>_ffltu</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, fflti.o(.text), UNUSED)
 
-<P><STRONG><a name="[38]"></a>__user_setup_stackheap</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
+<P><STRONG><a name="[3f]"></a>__user_setup_stackheap</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __user_setup_stackheap
 </UL>
-<BR>[Calls]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
-<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
+<BR>[Calls]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
 </UL>
-<BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
+<BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
 </UL>
 
-<P><STRONG><a name="[3d]"></a>exit</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, exit.o(.text))
+<P><STRONG><a name="[44]"></a>exit</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, exit.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
 <LI>Call Chain = exit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
-<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_call_atexit_fns (Weak Reference)
+<BR>[Calls]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_call_atexit_fns (Weak Reference)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
-</UL>
-
-<P><STRONG><a name="[be]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
-
-<P><STRONG><a name="[47]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+<BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[bf]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+<P><STRONG><a name="[e5]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
-<P><STRONG><a name="[41]"></a>_sys_exit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sys_exit.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
+<P><STRONG><a name="[4e]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[c0]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P><STRONG><a name="[e6]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
-<P><STRONG><a name="[c1]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P><STRONG><a name="[48]"></a>_sys_exit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sys_exit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
+</UL>
 
-<P><STRONG><a name="[c2]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
+<P><STRONG><a name="[e7]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[24]"></a>ADC0_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ac780x_adc.o(i.ADC0_IRQHandler))
+<P><STRONG><a name="[e8]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[e9]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[ea]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[eb]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[2a]"></a>ADC0_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ac780x_adc.o(i.ADC0_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ADC0_IRQHandler &rArr; ADC_CommonISR
 </UL>
-<BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_CommonISR
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_CommonISR
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[7b]"></a>CKGEN_Enable</STRONG> (Thumb, 110 bytes, Stack size 12 bytes, ac780x_ckgen.o(i.CKGEN_Enable))
+<P><STRONG><a name="[95]"></a>CKGEN_Enable</STRONG> (Thumb, 110 bytes, Stack size 12 bytes, ac780x_ckgen.o(i.CKGEN_Enable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = CKGEN_Enable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
-<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Init
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Init
 </UL>
 
-<P><STRONG><a name="[55]"></a>CKGEN_SetAPBClockDivider</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, ac780x_ckgen.o(i.CKGEN_SetAPBClockDivider))
-<BR><BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
-<LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+<P><STRONG><a name="[5c]"></a>CKGEN_SetAPBClockDivider</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, ac780x_ckgen.o(i.CKGEN_SetAPBClockDivider))
+<BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
 
-<P><STRONG><a name="[53]"></a>CKGEN_SetPLLReference</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, ac780x_ckgen.o(i.CKGEN_SetPLLReference))
-<BR><BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
-<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
+<P><STRONG><a name="[5a]"></a>CKGEN_SetPLLReference</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, ac780x_ckgen.o(i.CKGEN_SetPLLReference))
+<BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
 </UL>
 
-<P><STRONG><a name="[5d]"></a>CKGEN_SetPllFeedbackDiv</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, ac780x_ckgen.o(i.CKGEN_SetPllFeedbackDiv))
-<BR><BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
+<P><STRONG><a name="[64]"></a>CKGEN_SetPllFeedbackDiv</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, ac780x_ckgen.o(i.CKGEN_SetPllFeedbackDiv))
+<BR><BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
 </UL>
 
-<P><STRONG><a name="[5c]"></a>CKGEN_SetPllPostDiv</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, ac780x_ckgen.o(i.CKGEN_SetPllPostDiv))
-<BR><BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
+<P><STRONG><a name="[63]"></a>CKGEN_SetPllPostDiv</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, ac780x_ckgen.o(i.CKGEN_SetPllPostDiv))
+<BR><BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
 </UL>
 
-<P><STRONG><a name="[5b]"></a>CKGEN_SetPllPrevDiv</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, ac780x_ckgen.o(i.CKGEN_SetPllPrevDiv))
-<BR><BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
+<P><STRONG><a name="[62]"></a>CKGEN_SetPllPrevDiv</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, ac780x_ckgen.o(i.CKGEN_SetPllPrevDiv))
+<BR><BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
 </UL>
 
-<P><STRONG><a name="[54]"></a>CKGEN_SetSysclkDiv</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, ac780x_ckgen.o(i.CKGEN_SetSysclkDiv))
-<BR><BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
-<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
+<P><STRONG><a name="[5b]"></a>CKGEN_SetSysclkDiv</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, ac780x_ckgen.o(i.CKGEN_SetSysclkDiv))
+<BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
 </UL>
 
-<P><STRONG><a name="[52]"></a>CKGEN_SetSysclkSrc</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, ac780x_ckgen.o(i.CKGEN_SetSysclkSrc))
-<BR><BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
-<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
+<P><STRONG><a name="[59]"></a>CKGEN_SetSysclkSrc</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, ac780x_ckgen.o(i.CKGEN_SetSysclkSrc))
+<BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
 </UL>
 
-<P><STRONG><a name="[7c]"></a>CKGEN_SoftReset</STRONG> (Thumb, 110 bytes, Stack size 12 bytes, ac780x_ckgen.o(i.CKGEN_SoftReset))
+<P><STRONG><a name="[96]"></a>CKGEN_SoftReset</STRONG> (Thumb, 110 bytes, Stack size 12 bytes, ac780x_ckgen.o(i.CKGEN_SoftReset))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = CKGEN_SoftReset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
-<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Init
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Init
 </UL>
 
-<P><STRONG><a name="[18]"></a>DMA0_Channel0_IRQHandler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, ac780x_dma.o(i.DMA0_Channel0_IRQHandler))
+<P><STRONG><a name="[1e]"></a>DMA0_Channel0_IRQHandler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, ac780x_dma.o(i.DMA0_Channel0_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DMA0_Channel0_IRQHandler &rArr; DMA_ClearFlag
 </UL>
-<BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_ClearFlag
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_ClearFlag
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[19]"></a>DMA0_Channel1_IRQHandler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, ac780x_dma.o(i.DMA0_Channel1_IRQHandler))
+<P><STRONG><a name="[1f]"></a>DMA0_Channel1_IRQHandler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, ac780x_dma.o(i.DMA0_Channel1_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DMA0_Channel1_IRQHandler &rArr; DMA_ClearFlag
 </UL>
-<BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_ClearFlag
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_ClearFlag
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[1a]"></a>DMA0_Channel2_IRQHandler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, ac780x_dma.o(i.DMA0_Channel2_IRQHandler))
+<P><STRONG><a name="[20]"></a>DMA0_Channel2_IRQHandler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, ac780x_dma.o(i.DMA0_Channel2_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DMA0_Channel2_IRQHandler &rArr; DMA_ClearFlag
 </UL>
-<BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_ClearFlag
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_ClearFlag
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[1b]"></a>DMA0_Channel3_IRQHandler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, ac780x_dma.o(i.DMA0_Channel3_IRQHandler))
+<P><STRONG><a name="[21]"></a>DMA0_Channel3_IRQHandler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, ac780x_dma.o(i.DMA0_Channel3_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DMA0_Channel3_IRQHandler &rArr; DMA_ClearFlag
 </UL>
-<BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_ClearFlag
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_ClearFlag
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[4c]"></a>DMA_ClearFlag</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, ac780x_dma.o(i.DMA_ClearFlag))
+<P><STRONG><a name="[53]"></a>DMA_ClearFlag</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, ac780x_dma.o(i.DMA_ClearFlag))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = DMA_ClearFlag
 </UL>
-<BR>[Calls]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_ChannelHardRst
+<BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_ChannelHardRst
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA0_Channel3_IRQHandler
-<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA0_Channel2_IRQHandler
-<LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA0_Channel1_IRQHandler
-<LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA0_Channel0_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA0_Channel3_IRQHandler
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA0_Channel2_IRQHandler
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA0_Channel1_IRQHandler
+<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA0_Channel0_IRQHandler
 </UL>
 
-<P><STRONG><a name="[26]"></a>EXTI0_IRQHandler</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, ac780x_gpio.o(i.EXTI0_IRQHandler))
+<P><STRONG><a name="[2c]"></a>EXTI0_IRQHandler</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, ac780x_gpio.o(i.EXTI0_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = EXTI0_IRQHandler &rArr; GPIO_GetPendingExtIntSource
 </UL>
-<BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ClearPendingExtInterrupt
-<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPendingExtIntSource
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ClearPendingExtInterrupt
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPendingExtIntSource
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[27]"></a>EXTI1_IRQHandler</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, ac780x_gpio.o(i.EXTI1_IRQHandler))
+<P><STRONG><a name="[2d]"></a>EXTI1_IRQHandler</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, ac780x_gpio.o(i.EXTI1_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = EXTI1_IRQHandler &rArr; GPIO_GetPendingExtIntSource
 </UL>
-<BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ClearPendingExtInterrupt
-<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPendingExtIntSource
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ClearPendingExtInterrupt
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPendingExtIntSource
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[28]"></a>EXTI2_IRQHandler</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, ac780x_gpio.o(i.EXTI2_IRQHandler))
+<P><STRONG><a name="[2e]"></a>EXTI2_IRQHandler</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, ac780x_gpio.o(i.EXTI2_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = EXTI2_IRQHandler &rArr; GPIO_GetPendingExtIntSource
 </UL>
-<BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ClearPendingExtInterrupt
-<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPendingExtIntSource
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ClearPendingExtInterrupt
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPendingExtIntSource
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[29]"></a>EXTI3_8_IRQHandler</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, ac780x_gpio.o(i.EXTI3_8_IRQHandler))
+<P><STRONG><a name="[2f]"></a>EXTI3_8_IRQHandler</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, ac780x_gpio.o(i.EXTI3_8_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = EXTI3_8_IRQHandler &rArr; GPIO_GetPendingExtIntSource
 </UL>
-<BR>[Calls]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPendingExtInterrupt
-<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ClearPendingExtInterrupt
-<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPendingExtIntSource
+<BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPendingExtInterrupt
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ClearPendingExtInterrupt
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPendingExtIntSource
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[2a]"></a>EXTI9_15_IRQHandler</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, ac780x_gpio.o(i.EXTI9_15_IRQHandler))
+<P><STRONG><a name="[30]"></a>EXTI9_15_IRQHandler</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, ac780x_gpio.o(i.EXTI9_15_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = EXTI9_15_IRQHandler &rArr; GPIO_GetPendingExtIntSource
 </UL>
-<BR>[Calls]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPendingExtInterrupt
-<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ClearPendingExtInterrupt
-<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPendingExtIntSource
+<BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPendingExtInterrupt
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ClearPendingExtInterrupt
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPendingExtIntSource
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[4f]"></a>GPIO_ClearPendingExtInterrupt</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, ac780x_gpio.o(i.GPIO_ClearPendingExtInterrupt))
-<BR><BR>[Called By]<UL><LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI9_15_IRQHandler
-<LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI3_8_IRQHandler
-<LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_IRQHandler
-<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI1_IRQHandler
-<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI0_IRQHandler
+<P><STRONG><a name="[56]"></a>GPIO_ClearPendingExtInterrupt</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, ac780x_gpio.o(i.GPIO_ClearPendingExtInterrupt))
+<BR><BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI9_15_IRQHandler
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI3_8_IRQHandler
+<LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_IRQHandler
+<LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI1_IRQHandler
+<LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI0_IRQHandler
 </UL>
 
-<P><STRONG><a name="[50]"></a>GPIO_GetPendingExtInterrupt</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, ac780x_gpio.o(i.GPIO_GetPendingExtInterrupt))
-<BR><BR>[Called By]<UL><LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI9_15_IRQHandler
-<LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI3_8_IRQHandler
+<P><STRONG><a name="[57]"></a>GPIO_GetPendingExtInterrupt</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, ac780x_gpio.o(i.GPIO_GetPendingExtInterrupt))
+<BR><BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI9_15_IRQHandler
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI3_8_IRQHandler
 </UL>
 
-<P><STRONG><a name="[6a]"></a>GPIO_SetDir</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, ac780x_gpio.o(i.GPIO_SetDir))
+<P><STRONG><a name="[72]"></a>GPIO_SetDir</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, ac780x_gpio.o(i.GPIO_SetDir))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GPIO_SetDir
 </UL>
-<BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_IOInit
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_IOInit
 </UL>
 
-<P><STRONG><a name="[69]"></a>GPIO_SetFunc</STRONG> (Thumb, 238 bytes, Stack size 16 bytes, ac780x_gpio.o(i.GPIO_SetFunc))
+<P><STRONG><a name="[71]"></a>GPIO_SetFunc</STRONG> (Thumb, 238 bytes, Stack size 16 bytes, ac780x_gpio.o(i.GPIO_SetFunc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GPIO_SetFunc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_IOInit
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_IOInit
 </UL>
 
-<P><STRONG><a name="[6b]"></a>GPIO_SetPinLevel</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, ac780x_gpio.o(i.GPIO_SetPinLevel))
+<P><STRONG><a name="[73]"></a>GPIO_SetPinLevel</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, ac780x_gpio.o(i.GPIO_SetPinLevel))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GPIO_SetPinLevel
 </UL>
-<BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_IOInit
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_IOInit
 </UL>
 
-<P><STRONG><a name="[6]"></a>NMI_Handler</STRONG> (Thumb, 174 bytes, Stack size 8 bytes, ac780x_spm.o(i.NMI_Handler))
+<P><STRONG><a name="[c]"></a>NMI_Handler</STRONG> (Thumb, 174 bytes, Stack size 8 bytes, ac780x_spm.o(i.NMI_Handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = NMI_Handler &rArr; mdelay &rArr; SysTickRepeatDelay &rArr; SysTickDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
-<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_GetModuleWakeupSourceFlag
-<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_EnablePLL
-<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetSysclkSrc
-<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetSysclkDiv
-<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetPLLReference
-<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetAPBClockDivider
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_GetModuleWakeupSourceFlag
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_EnablePLL
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetSysclkSrc
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetSysclkDiv
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetPLLReference
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetAPBClockDivider
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[21]"></a>PVD_IRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, ac780x_spm.o(i.PVD_IRQHandler))
+<P><STRONG><a name="[27]"></a>PVD_IRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, ac780x_spm.o(i.PVD_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = PVD_IRQHandler &rArr; SPM_GetModuleWakeupSourceFlag
 </UL>
-<BR>[Calls]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_GetModuleWakeupSourceFlag
+<BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_GetModuleWakeupSourceFlag
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[56]"></a>SPM_EnablePLL</STRONG> (Thumb, 104 bytes, Stack size 12 bytes, ac780x_spm.o(i.SPM_EnablePLL))
+<P><STRONG><a name="[5d]"></a>SPM_EnablePLL</STRONG> (Thumb, 104 bytes, Stack size 12 bytes, ac780x_spm.o(i.SPM_EnablePLL))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = SPM_EnablePLL
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
-<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
+<BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
 </UL>
 
-<P><STRONG><a name="[58]"></a>SPM_EnableXOSC</STRONG> (Thumb, 144 bytes, Stack size 16 bytes, ac780x_spm.o(i.SPM_EnableXOSC))
+<P><STRONG><a name="[5f]"></a>SPM_EnableXOSC</STRONG> (Thumb, 144 bytes, Stack size 16 bytes, ac780x_spm.o(i.SPM_EnableXOSC))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SPM_EnableXOSC
 </UL>
-<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_XOSCOKBypassSet
+<BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_XOSCOKBypassSet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
 </UL>
 
-<P><STRONG><a name="[51]"></a>SPM_GetModuleWakeupSourceFlag</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, ac780x_spm.o(i.SPM_GetModuleWakeupSourceFlag))
+<P><STRONG><a name="[58]"></a>SPM_GetModuleWakeupSourceFlag</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, ac780x_spm.o(i.SPM_GetModuleWakeupSourceFlag))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SPM_GetModuleWakeupSourceFlag
 </UL>
-<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_IRQHandler
-<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PVD_IRQHandler
-<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+<BR>[Called By]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_IRQHandler
+<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PVD_IRQHandler
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
 </UL>
 
-<P><STRONG><a name="[22]"></a>SPM_IRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, ac780x_spm.o(i.SPM_IRQHandler))
+<P><STRONG><a name="[28]"></a>SPM_IRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, ac780x_spm.o(i.SPM_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SPM_IRQHandler &rArr; SPM_GetModuleWakeupSourceFlag
 </UL>
-<BR>[Calls]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_GetModuleWakeupSourceFlag
+<BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_GetModuleWakeupSourceFlag
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[59]"></a>SPM_XOSCOKBypassSet</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, ac780x_spm.o(i.SPM_XOSCOKBypassSet))
-<BR><BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_EnableXOSC
+<P><STRONG><a name="[60]"></a>SPM_XOSCOKBypassSet</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, ac780x_spm.o(i.SPM_XOSCOKBypassSet))
+<BR><BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_EnableXOSC
 </UL>
 
-<P><STRONG><a name="[61]"></a>SetEflashClock</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, system_ac780x.o(i.SetEflashClock))
+<P><STRONG><a name="[68]"></a>SetEflashClock</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, system_ac780x.o(i.SetEflashClock))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SetEflashClock
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+<BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
 
-<P><STRONG><a name="[5a]"></a>SetHSEClock</STRONG> (Thumb, 102 bytes, Stack size 8 bytes, system_ac780x.o(i.SetHSEClock))
+<P><STRONG><a name="[61]"></a>SetHSEClock</STRONG> (Thumb, 102 bytes, Stack size 8 bytes, system_ac780x.o(i.SetHSEClock))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SetHSEClock &rArr; SPM_EnableXOSC
 </UL>
-<BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_EnableXOSC
-<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_EnablePLL
-<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetSysclkSrc
-<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetSysclkDiv
-<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetPllPrevDiv
-<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetPllPostDiv
-<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetPllFeedbackDiv
-<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetPLLReference
+<BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_EnableXOSC
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPM_EnablePLL
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetSysclkSrc
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetSysclkDiv
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetPllPrevDiv
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetPllPostDiv
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetPllFeedbackDiv
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetPLLReference
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
+<BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
 </UL>
 
-<P><STRONG><a name="[5e]"></a>SetSysClock</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_ac780x.o(i.SetSysClock))
+<P><STRONG><a name="[65]"></a>SetSysClock</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_ac780x.o(i.SetSysClock))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SetSysClock &rArr; SetHSEClock &rArr; SPM_EnableXOSC
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
+<BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetHSEClock
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+<BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
 
-<P><STRONG><a name="[2b]"></a>SystemInit</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, system_ac780x.o(i.SystemInit))
+<P><STRONG><a name="[31]"></a>SystemInit</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, system_ac780x.o(i.SystemInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = SystemInit &rArr; SetSysClock &rArr; SetHSEClock &rArr; SPM_EnableXOSC
 </UL>
-<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetAPBClockDivider
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
-<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEflashClock
+<BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SetAPBClockDivider
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEflashClock
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(.text)
 </UL>
-<P><STRONG><a name="[79]"></a>TECom_GetDataWithAddr</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, tecom_cache.o(i.TECom_GetDataWithAddr))
-<BR><BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERevFrame_Handle
+<P><STRONG><a name="[69]"></a>TECO2_Init</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, teco2_core.o(i.TECO2_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = TECO2_Init &rArr; TEEvent_Start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEEvent_Start
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[62]"></a>TECom_Init</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, tecom.o(i.TECom_Init))
+<P><STRONG><a name="[b4]"></a>TECom_GetData</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, tecom_cache.o(i.TECom_GetData))
+<BR><BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;synToMemThread_Handle
+</UL>
+
+<P><STRONG><a name="[8b]"></a>TECom_GetDataWithAddr</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, tecom_cache.o(i.TECom_GetDataWithAddr))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERevFrame_Handle
+</UL>
+
+<P><STRONG><a name="[6b]"></a>TECom_Init</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, tecom.o(i.TECom_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = TECom_Init &rArr; TEMCU_Uart_Init &rArr; UART_Init &rArr; UART_SetBaudrate &rArr; __aeabi_fdiv
 </UL>
-<BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Uart_RevStart
-<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Uart_RevCallBack_Hook
-<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Uart_Init
+<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Uart_RevStart
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Uart_RevCallBack_Hook
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Uart_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[78]"></a>TECom_SetDataWithAddr</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, tecom_cache.o(i.TECom_SetDataWithAddr))
+<P><STRONG><a name="[b3]"></a>TECom_SetData</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, tecom_cache.o(i.TECom_SetData))
+<BR><BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;synFromMemThread_Handle
+</UL>
+
+<P><STRONG><a name="[8a]"></a>TECom_SetDataWithAddr</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, tecom_cache.o(i.TECom_SetDataWithAddr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TECom_SetDataWithAddr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERevFrame_Handle
+<BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERevFrame_Handle
 </UL>
 
-<P><STRONG><a name="[66]"></a>TEEvent_Start</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, teevent.o(i.TEEvent_Start))
+<P><STRONG><a name="[6a]"></a>TEEvent_Start</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, teevent.o(i.TEEvent_Start))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = TEEvent_Start
 </UL>
-<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hook
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hook
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;revData
+<BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;revData
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMem_Init
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;synFromMemThread_Handle
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TECO2_Init
 </UL>
 
-<P><STRONG><a name="[30]"></a>TEEvent_Trigger1MS</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, teevent.o(i.TEEvent_Trigger1MS))
+<P><STRONG><a name="[b1]"></a>TEEvent_Stop</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, teevent.o(i.TEEvent_Stop))
+<BR><BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memSynThread_Handle
+</UL>
+
+<P><STRONG><a name="[39]"></a>TEEvent_Trigger1MS</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, teevent.o(i.TEEvent_Trigger1MS))
 <BR>[Address Reference Count : 1]<UL><LI> main.o(i.main)
 </UL>
-<P><STRONG><a name="[68]"></a>TEMCU_IOInit</STRONG> (Thumb, 170 bytes, Stack size 8 bytes, temcu_ioinit_ac7801x_lqfp48.o(i.TEMCU_IOInit))
+<P><STRONG><a name="[a6]"></a>TEMCU_Flash_Erase</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, temcu_flash.o(i.TEMCU_Flash_Erase))
+<BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;copyThread
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;checkThread
+</UL>
+
+<P><STRONG><a name="[8e]"></a>TEMCU_Flash_EraseCallBack_Hook</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, temcu_flash.o(i.TEMCU_Flash_EraseCallBack_Hook))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TESW_EEPROM_Init
+</UL>
+
+<P><STRONG><a name="[8f]"></a>TEMCU_Flash_EraseVeriftCallBack_Hook</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, temcu_flash.o(i.TEMCU_Flash_EraseVeriftCallBack_Hook))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TESW_EEPROM_Init
+</UL>
+
+<P><STRONG><a name="[a5]"></a>TEMCU_Flash_EraseVerify</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, temcu_flash.o(i.TEMCU_Flash_EraseVerify))
+<BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;copyThread
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;checkThread
+</UL>
+
+<P><STRONG><a name="[8c]"></a>TEMCU_Flash_Init</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, temcu_flash.o(i.TEMCU_Flash_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TESW_EEPROM_Init
+</UL>
+
+<P><STRONG><a name="[8d]"></a>TEMCU_Flash_ProgramCallBack_Hook</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, temcu_flash.o(i.TEMCU_Flash_ProgramCallBack_Hook))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TESW_EEPROM_Init
+</UL>
+
+<P><STRONG><a name="[91]"></a>TEMCU_Flash_Read</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, temcu_flash.o(i.TEMCU_Flash_Read))
+<BR><BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TESW_EEPROM_Read
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;copyThread
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;checkThread
+</UL>
+
+<P><STRONG><a name="[93]"></a>TEMCU_Flash_Write</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, temcu_flash.o(i.TEMCU_Flash_Write))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TESW_EEPROM_Write
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;copyThread
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;checkThread
+</UL>
+
+<P><STRONG><a name="[70]"></a>TEMCU_IOInit</STRONG> (Thumb, 170 bytes, Stack size 8 bytes, temcu_ioinit_ac7801x_lqfp48.o(i.TEMCU_IOInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = TEMCU_IOInit &rArr; GPIO_SetFunc
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetPinLevel
-<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetFunc
-<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetDir
+<BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetPinLevel
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetFunc
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetDir
 </UL>
-<BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[6c]"></a>TEMCU_NVIC_Init</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, temcu_nvic.o(i.TEMCU_NVIC_Init))
+<P><STRONG><a name="[74]"></a>TEMCU_NVIC_Init</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, temcu_nvic.o(i.TEMCU_NVIC_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = TEMCU_NVIC_Init &rArr; __NVIC_SetPriority
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
-<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_EnableIRQ
-<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_DisableIRQ
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_ClearPendingIRQ
+<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_EnableIRQ
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_DisableIRQ
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_ClearPendingIRQ
 </UL>
-<BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[8b]"></a>TEMCU_Timer_CallBack_Hook</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, temcu_timer.o(i.TEMCU_Timer_CallBack_Hook))
-<BR><BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[71]"></a>TEMCU_Timer_Init</STRONG> (Thumb, 44 bytes, Stack size 24 bytes, temcu_timer.o(i.TEMCU_Timer_Init))
+<P><STRONG><a name="[ad]"></a>TEMCU_Timer_CallBack_Hook</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, temcu_timer.o(i.TEMCU_Timer_CallBack_Hook))
+<BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[79]"></a>TEMCU_Timer_Init</STRONG> (Thumb, 44 bytes, Stack size 24 bytes, temcu_timer.o(i.TEMCU_Timer_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = TEMCU_Timer_Init &rArr; TIMER_Init &rArr; CKGEN_SoftReset
 </UL>
-<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Init
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[63]"></a>TEMCU_Uart_Init</STRONG> (Thumb, 52 bytes, Stack size 24 bytes, temcu_uart.o(i.TEMCU_Uart_Init))
+<P><STRONG><a name="[6c]"></a>TEMCU_Uart_Init</STRONG> (Thumb, 52 bytes, Stack size 24 bytes, temcu_uart.o(i.TEMCU_Uart_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = TEMCU_Uart_Init &rArr; UART_Init &rArr; UART_SetBaudrate &rArr; __aeabi_fdiv
 </UL>
-<BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TECom_Init
-</UL>
-
-<P><STRONG><a name="[64]"></a>TEMCU_Uart_RevCallBack_Hook</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, temcu_uart.o(i.TEMCU_Uart_RevCallBack_Hook))
-<BR><BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TECom_Init
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TECom_Init
 </UL>
 
-<P><STRONG><a name="[65]"></a>TEMCU_Uart_RevStart</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, temcu_uart.o(i.TEMCU_Uart_RevStart))
+<P><STRONG><a name="[6d]"></a>TEMCU_Uart_RevCallBack_Hook</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, temcu_uart.o(i.TEMCU_Uart_RevCallBack_Hook))
+<BR><BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TECom_Init
+</UL>
+
+<P><STRONG><a name="[6e]"></a>TEMCU_Uart_RevStart</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, temcu_uart.o(i.TEMCU_Uart_RevStart))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TEMCU_Uart_RevStart
 </UL>
-<BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetRXNEInterrupt
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetRXNEInterrupt
 </UL>
-<BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TECom_Init
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TECom_Init
 </UL>
 
-<P><STRONG><a name="[75]"></a>TEMCU_Uart_Send</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, temcu_uart.o(i.TEMCU_Uart_Send))
+<P><STRONG><a name="[7d]"></a>TEMCU_Uart_Send</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, temcu_uart.o(i.TEMCU_Uart_Send))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = TEMCU_Uart_Send
 </UL>
-<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetTXEInterrupt
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetTXEInterrupt
 </UL>
-<BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERevFrame_Handle
+<BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERevFrame_Handle
 </UL>
 
-<P><STRONG><a name="[8c]"></a>TEMainThread_Event</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, teevent.o(i.TEMainThread_Event))
+<P><STRONG><a name="[ae]"></a>TEMainThread_Event</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, teevent.o(i.TEMainThread_Event))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TEMainThread_Event
 </UL>
-<BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[31]"></a>TERevFrame_Handle</STRONG> (Thumb, 358 bytes, Stack size 24 bytes, tecom.o(i.TERevFrame_Handle))
+<P><STRONG><a name="[7f]"></a>TEMainThread_Flash</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, temcu_flash.o(i.TEMainThread_Flash))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = TEMainThread_Flash &rArr; unlockThread
+</UL>
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;unlockThread
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;programThread
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eraseVerifyThread
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eraseThread
+</UL>
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMainThread_SWEEPRom
+</UL>
+
+<P><STRONG><a name="[84]"></a>TEMainThread_SWEEPRom</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, tesw_eeprom.o(i.TEMainThread_SWEEPRom))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = TEMainThread_SWEEPRom &rArr; copyThread &rArr; __ARM_common_switch8
+</UL>
+<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;copyThread
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;checkThread
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMainThread_Flash
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memDriverThread_Handle
+</UL>
+
+<P><STRONG><a name="[af]"></a>TEMem_GetAddr</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, temem_cache.o(i.TEMem_GetAddr))
+<BR><BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memSynThread_Handle
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memUpdateThread_Handle
+</UL>
+
+<P><STRONG><a name="[b2]"></a>TEMem_GetData</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, temem_cache.o(i.TEMem_GetData))
+<BR><BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;synFromMemThread_Handle
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memUpdateThread_Handle
+</UL>
+
+<P><STRONG><a name="[87]"></a>TEMem_Init</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, temem.o(i.TEMem_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = TEMem_Init &rArr; TEEvent_Start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEEvent_Start
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TESW_EEPROM_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b0]"></a>TEMem_SetData</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, temem_cache.o(i.TEMem_SetData))
+<BR><BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memSynThread_Handle
+<LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;synToMemThread_Handle
+</UL>
+
+<P><STRONG><a name="[7]"></a>TERevFrame_Handle</STRONG> (Thumb, 358 bytes, Stack size 24 bytes, tecom.o(i.TERevFrame_Handle))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = TERevFrame_Handle &rArr; getCrc16_Modbus
 </UL>
-<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getCrc16_Modbus
-<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TECom_SetDataWithAddr
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TECom_GetDataWithAddr
-<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Uart_Send
+<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getCrc16_Modbus
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TECom_SetDataWithAddr
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TECom_GetDataWithAddr
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Uart_Send
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> tecom.o(.data)
 </UL>
-<P><STRONG><a name="[1c]"></a>TIMER_Channel0_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ac780x_timer.o(i.TIMER_Channel0_IRQHandler))
+<P><STRONG><a name="[88]"></a>TESW_EEPROM_Init</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, tesw_eeprom.o(i.TESW_EEPROM_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TESW_EEPROM_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Flash_ProgramCallBack_Hook
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Flash_Init
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Flash_EraseVeriftCallBack_Hook
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Flash_EraseCallBack_Hook
+</UL>
+<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMem_Init
+</UL>
+
+<P><STRONG><a name="[90]"></a>TESW_EEPROM_Read</STRONG> (Thumb, 104 bytes, Stack size 24 bytes, tesw_eeprom.o(i.TESW_EEPROM_Read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = TESW_EEPROM_Read
+</UL>
+<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Flash_Read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memSynThread_Handle
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memUpdateThread_Handle
+</UL>
+
+<P><STRONG><a name="[92]"></a>TESW_EEPROM_Write</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, tesw_eeprom.o(i.TESW_EEPROM_Write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = TESW_EEPROM_Write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Flash_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memUpdateThread_Handle
+</UL>
+
+<P><STRONG><a name="[22]"></a>TIMER_Channel0_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ac780x_timer.o(i.TIMER_Channel0_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = TIMER_Channel0_IRQHandler &rArr; TIMER_CommonISR
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_CommonISR
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_CommonISR
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[1d]"></a>TIMER_Channel1_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ac780x_timer.o(i.TIMER_Channel1_IRQHandler))
+<P><STRONG><a name="[23]"></a>TIMER_Channel1_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ac780x_timer.o(i.TIMER_Channel1_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = TIMER_Channel1_IRQHandler &rArr; TIMER_CommonISR
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_CommonISR
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_CommonISR
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[1e]"></a>TIMER_Channel2_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ac780x_timer.o(i.TIMER_Channel2_IRQHandler))
+<P><STRONG><a name="[24]"></a>TIMER_Channel2_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ac780x_timer.o(i.TIMER_Channel2_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = TIMER_Channel2_IRQHandler &rArr; TIMER_CommonISR
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_CommonISR
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_CommonISR
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[1f]"></a>TIMER_Channel3_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ac780x_timer.o(i.TIMER_Channel3_IRQHandler))
+<P><STRONG><a name="[25]"></a>TIMER_Channel3_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ac780x_timer.o(i.TIMER_Channel3_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = TIMER_Channel3_IRQHandler &rArr; TIMER_CommonISR
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_CommonISR
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_CommonISR
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[72]"></a>TIMER_Init</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, ac780x_timer.o(i.TIMER_Init))
+<P><STRONG><a name="[7a]"></a>TIMER_Init</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, ac780x_timer.o(i.TIMER_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = TIMER_Init &rArr; CKGEN_SoftReset
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_DisableIRQ
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_SetLinkMode
-<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_SetInterrupt
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_SetChannel
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SoftReset
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_Enable
+<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SoftReset
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_Enable
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_DisableIRQ
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_SetLinkMode
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_SetInterrupt
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_SetChannel
 </UL>
-<BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Timer_Init
+<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Timer_Init
 </UL>
 
-<P><STRONG><a name="[10]"></a>UART0_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ac780x_uart.o(i.UART0_IRQHandler))
+<P><STRONG><a name="[16]"></a>UART0_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ac780x_uart.o(i.UART0_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = UART0_IRQHandler &rArr; UART_InterruptHandler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_InterruptHandler
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_InterruptHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[11]"></a>UART1_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ac780x_uart.o(i.UART1_IRQHandler))
+<P><STRONG><a name="[17]"></a>UART1_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ac780x_uart.o(i.UART1_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = UART1_IRQHandler &rArr; UART_InterruptHandler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_InterruptHandler
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_InterruptHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[12]"></a>UART2_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ac780x_uart.o(i.UART2_IRQHandler))
+<P><STRONG><a name="[18]"></a>UART2_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ac780x_uart.o(i.UART2_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = UART2_IRQHandler &rArr; UART_InterruptHandler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_InterruptHandler
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_InterruptHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[73]"></a>UART_Init</STRONG> (Thumb, 260 bytes, Stack size 16 bytes, ac780x_uart.o(i.UART_Init))
+<P><STRONG><a name="[7b]"></a>UART_Init</STRONG> (Thumb, 260 bytes, Stack size 16 bytes, ac780x_uart.o(i.UART_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = UART_Init &rArr; UART_SetBaudrate &rArr; __aeabi_fdiv
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SoftReset
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_Enable
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetParity
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetBaudrate
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Set2ByteFIFO
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EnableDMA
+<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_SoftReset
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKGEN_Enable
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetParity
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetBaudrate
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Set2ByteFIFO
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EnableDMA
 </UL>
-<BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Uart_Init
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Uart_Init
 </UL>
 
-<P><STRONG><a name="[83]"></a>UART_SetBaudrate</STRONG> (Thumb, 198 bytes, Stack size 56 bytes, ac780x_uart.o(i.UART_SetBaudrate))
+<P><STRONG><a name="[9d]"></a>UART_SetBaudrate</STRONG> (Thumb, 198 bytes, Stack size 56 bytes, ac780x_uart.o(i.UART_SetBaudrate))
 <BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = UART_SetBaudrate &rArr; __aeabi_fdiv
 </UL>
-<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
-<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2ulz
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2uiz
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_frsub
+<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2ulz
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2uiz
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_frsub
 </UL>
-<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
-</UL>
-
-<P><STRONG><a name="[82]"></a>UART_SetParity</STRONG> (Thumb, 98 bytes, Stack size 0 bytes, ac780x_uart.o(i.UART_SetParity))
-<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
 </UL>
 
-<P><STRONG><a name="[13]"></a>WDG_IRQHandler</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, ac780x_wdg.o(i.WDG_IRQHandler))
+<P><STRONG><a name="[9c]"></a>UART_SetParity</STRONG> (Thumb, 98 bytes, Stack size 0 bytes, ac780x_uart.o(i.UART_SetParity))
+<BR><BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
+</UL>
+
+<P><STRONG><a name="[19]"></a>WDG_IRQHandler</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, ac780x_wdg.o(i.WDG_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = WDG_IRQHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ac780x.o(RESET)
 </UL>
-<P><STRONG><a name="[8d]"></a>__ARM_common_switch8</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, tesw_eeprom.o(i.__ARM_common_switch8))
+<P><STRONG><a name="[a7]"></a>__ARM_common_switch8</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, tesw_eeprom.o(i.__ARM_common_switch8))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __ARM_common_switch8
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;revData
+<BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;revData
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;copyThread
 </UL>
 
-<P><STRONG><a name="[77]"></a>getCrc16_Modbus</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, tecrc16_modbus.o(i.getCrc16_Modbus))
+<P><STRONG><a name="[89]"></a>getCrc16_Modbus</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, tecrc16_modbus.o(i.getCrc16_Modbus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = getCrc16_Modbus
 </UL>
-<BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERevFrame_Handle
+<BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERevFrame_Handle
 </UL>
 
-<P><STRONG><a name="[3c]"></a>main</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[43]"></a>main</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = main &rArr; TECom_Init &rArr; TEMCU_Uart_Init &rArr; UART_Init &rArr; UART_SetBaudrate &rArr; __aeabi_fdiv
 </UL>
-<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TECom_Init
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMainThread_Event
-<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Timer_Init
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Timer_CallBack_Hook
-<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_NVIC_Init
-<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_IOInit
+<BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMem_Init
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TECom_Init
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TECO2_Init
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMainThread_Event
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Timer_Init
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Timer_CallBack_Hook
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_NVIC_Init
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_IOInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+<BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[57]"></a>mdelay</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, system_ac780x.o(i.mdelay))
+<P><STRONG><a name="[5e]"></a>mdelay</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, system_ac780x.o(i.mdelay))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = mdelay &rArr; SysTickRepeatDelay &rArr; SysTickDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickRepeatDelay
-<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickDelay
+<BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickRepeatDelay
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickDelay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+<BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
 </UL>
 
-<P><STRONG><a name="[2d]"></a>revData</STRONG> (Thumb, 156 bytes, Stack size 16 bytes, tecom.o(i.revData))
+<P><STRONG><a name="[8]"></a>memDriverThread_Handle</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, temem.o(i.memDriverThread_Handle))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = memDriverThread_Handle &rArr; TEMainThread_SWEEPRom &rArr; copyThread &rArr; __ARM_common_switch8
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMainThread_SWEEPRom
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> temem.o(.data)
+</UL>
+<P><STRONG><a name="[a]"></a>memSynThread_Handle</STRONG> (Thumb, 98 bytes, Stack size 16 bytes, temem.o(i.memSynThread_Handle))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = memSynThread_Handle &rArr; TESW_EEPROM_Read
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMem_SetData
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEEvent_Stop
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TESW_EEPROM_Read
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMem_GetAddr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> temem.o(.data)
+</UL>
+<P><STRONG><a name="[9]"></a>memUpdateThread_Handle</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, temem.o(i.memUpdateThread_Handle))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = memUpdateThread_Handle &rArr; TESW_EEPROM_Read
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMem_GetData
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TESW_EEPROM_Write
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TESW_EEPROM_Read
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMem_GetAddr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> temem.o(.data)
+</UL>
+<P><STRONG><a name="[33]"></a>revData</STRONG> (Thumb, 156 bytes, Stack size 16 bytes, tecom.o(i.revData))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = revData &rArr; TEEvent_Start
 </UL>
-<BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEEvent_Start
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+<BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEEvent_Start
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> tecom.o(i.TECom_Init)
 </UL>
-<P><STRONG><a name="[c3]"></a>__aeabi_fadd</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, faddsub.o(x$fpl$fadd), UNUSED)
+<P><STRONG><a name="[6]"></a>synFromMemThread_Handle</STRONG> (Thumb, 254 bytes, Stack size 8 bytes, teco2_core.o(i.synFromMemThread_Handle))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = synFromMemThread_Handle &rArr; TEEvent_Start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMem_GetData
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TECom_SetData
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEEvent_Start
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> teco2_core.o(.data)
+</UL>
+<P><STRONG><a name="[5]"></a>synToMemThread_Handle</STRONG> (Thumb, 244 bytes, Stack size 8 bytes, teco2_core.o(i.synToMemThread_Handle))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = synToMemThread_Handle
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMem_SetData
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TECom_GetData
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> teco2_core.o(.data)
+</UL>
+<P><STRONG><a name="[ec]"></a>__aeabi_fadd</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, faddsub.o(x$fpl$fadd), UNUSED)
 
-<P><STRONG><a name="[8e]"></a>_fadd</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, faddsub.o(x$fpl$fadd), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fsub1
+<P><STRONG><a name="[b6]"></a>_fadd</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, faddsub.o(x$fpl$fadd), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fsub1
 </UL>
 
-<P><STRONG><a name="[89]"></a>__aeabi_fmul</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, fmul.o(x$fpl$fmul))
+<P><STRONG><a name="[a3]"></a>__aeabi_fmul</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, fmul.o(x$fpl$fmul))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_fmul
 </UL>
-<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetBaudrate
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetBaudrate
 </UL>
 
-<P><STRONG><a name="[c4]"></a>_fmul</STRONG> (Thumb, 172 bytes, Stack size 16 bytes, fmul.o(x$fpl$fmul), UNUSED)
+<P><STRONG><a name="[ed]"></a>_fmul</STRONG> (Thumb, 172 bytes, Stack size 16 bytes, fmul.o(x$fpl$fmul), UNUSED)
 
-<P><STRONG><a name="[88]"></a>__aeabi_frsub</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, faddsub.o(x$fpl$frsb))
+<P><STRONG><a name="[a2]"></a>__aeabi_frsub</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, faddsub.o(x$fpl$frsb))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_frsub
 </UL>
-<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetBaudrate
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetBaudrate
 </UL>
 
-<P><STRONG><a name="[90]"></a>_frsb</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, faddsub.o(x$fpl$frsb), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fsub1
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fadd1
+<P><STRONG><a name="[b8]"></a>_frsb</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, faddsub.o(x$fpl$frsb), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fsub1
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fadd1
 </UL>
 
-<P><STRONG><a name="[c5]"></a>__aeabi_fsub</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, faddsub.o(x$fpl$fsub), UNUSED)
+<P><STRONG><a name="[ee]"></a>__aeabi_fsub</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, faddsub.o(x$fpl$fsub), UNUSED)
 
-<P><STRONG><a name="[92]"></a>_fsub</STRONG> (Thumb, 204 bytes, Stack size 16 bytes, faddsub.o(x$fpl$fsub), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fadd1
+<P><STRONG><a name="[ba]"></a>_fsub</STRONG> (Thumb, 204 bytes, Stack size 16 bytes, faddsub.o(x$fpl$fsub), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fadd1
 </UL>
 <P>
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[6f]"></a>__NVIC_ClearPendingIRQ</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, temcu_nvic.o(i.__NVIC_ClearPendingIRQ))
-<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_NVIC_Init
+<P><STRONG><a name="[ac]"></a>EFLASH_GetEopReg</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, temcu_flash.o(i.EFLASH_GetEopReg))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;programThread
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eraseVerifyThread
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eraseThread
 </UL>
 
-<P><STRONG><a name="[6d]"></a>__NVIC_DisableIRQ</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, temcu_nvic.o(i.__NVIC_DisableIRQ))
-<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_NVIC_Init
+<P><STRONG><a name="[aa]"></a>EFLASH_SetCtrlReg1</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, temcu_flash.o(i.EFLASH_SetCtrlReg1))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;programThread
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eraseVerifyThread
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eraseThread
 </UL>
 
-<P><STRONG><a name="[70]"></a>__NVIC_EnableIRQ</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, temcu_nvic.o(i.__NVIC_EnableIRQ))
-<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_NVIC_Init
+<P><STRONG><a name="[b5]"></a>EFLASH_SetKeyReg</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, temcu_flash.o(i.EFLASH_SetKeyReg))
+<BR><BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;unlockThread
 </UL>
 
-<P><STRONG><a name="[6e]"></a>__NVIC_SetPriority</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, temcu_nvic.o(i.__NVIC_SetPriority))
+<P><STRONG><a name="[a9]"></a>EFLASH_SetStartAddressReg</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, temcu_flash.o(i.EFLASH_SetStartAddressReg))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;programThread
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eraseVerifyThread
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eraseThread
+</UL>
+
+<P><STRONG><a name="[ab]"></a>EFLASH_TrigCtrlCmdReg</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, temcu_flash.o(i.EFLASH_TrigCtrlCmdReg))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;programThread
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eraseVerifyThread
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eraseThread
+</UL>
+
+<P><STRONG><a name="[a8]"></a>checkAddress</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, temcu_flash.o(i.checkAddress))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;programThread
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eraseVerifyThread
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eraseThread
+</UL>
+
+<P><STRONG><a name="[81]"></a>eraseThread</STRONG> (Thumb, 292 bytes, Stack size 8 bytes, temcu_flash.o(i.eraseThread))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = eraseThread
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;checkAddress
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFLASH_TrigCtrlCmdReg
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFLASH_SetStartAddressReg
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFLASH_SetCtrlReg1
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFLASH_GetEopReg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMainThread_Flash
+</UL>
+
+<P><STRONG><a name="[82]"></a>eraseVerifyThread</STRONG> (Thumb, 290 bytes, Stack size 8 bytes, temcu_flash.o(i.eraseVerifyThread))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = eraseVerifyThread
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;checkAddress
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFLASH_TrigCtrlCmdReg
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFLASH_SetStartAddressReg
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFLASH_SetCtrlReg1
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFLASH_GetEopReg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMainThread_Flash
+</UL>
+
+<P><STRONG><a name="[83]"></a>programThread</STRONG> (Thumb, 296 bytes, Stack size 8 bytes, temcu_flash.o(i.programThread))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = programThread
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;checkAddress
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFLASH_TrigCtrlCmdReg
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFLASH_SetStartAddressReg
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFLASH_SetCtrlReg1
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFLASH_GetEopReg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMainThread_Flash
+</UL>
+
+<P><STRONG><a name="[80]"></a>unlockThread</STRONG> (Thumb, 186 bytes, Stack size 8 bytes, temcu_flash.o(i.unlockThread))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = unlockThread
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFLASH_SetKeyReg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMainThread_Flash
+</UL>
+
+<P><STRONG><a name="[77]"></a>__NVIC_ClearPendingIRQ</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, temcu_nvic.o(i.__NVIC_ClearPendingIRQ))
+<BR><BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_NVIC_Init
+</UL>
+
+<P><STRONG><a name="[75]"></a>__NVIC_DisableIRQ</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, temcu_nvic.o(i.__NVIC_DisableIRQ))
+<BR><BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_NVIC_Init
+</UL>
+
+<P><STRONG><a name="[78]"></a>__NVIC_EnableIRQ</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, temcu_nvic.o(i.__NVIC_EnableIRQ))
+<BR><BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_NVIC_Init
+</UL>
+
+<P><STRONG><a name="[76]"></a>__NVIC_SetPriority</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, temcu_nvic.o(i.__NVIC_SetPriority))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __NVIC_SetPriority
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_NVIC_Init
+<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_NVIC_Init
 </UL>
 
-<P><STRONG><a name="[2e]"></a>Timer_Task</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, temcu_timer.o(i.Timer_Task))
+<P><STRONG><a name="[34]"></a>Timer_Task</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, temcu_timer.o(i.Timer_Task))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = Timer_Task
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> temcu_timer.o(i.TEMCU_Timer_Init)
 </UL>
-<P><STRONG><a name="[74]"></a>UART_SetRXNEInterrupt</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, temcu_uart.o(i.UART_SetRXNEInterrupt))
-<BR><BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Uart_RevStart
+<P><STRONG><a name="[7c]"></a>UART_SetRXNEInterrupt</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, temcu_uart.o(i.UART_SetRXNEInterrupt))
+<BR><BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Uart_RevStart
 </UL>
 
-<P><STRONG><a name="[76]"></a>UART_SetTXEInterrupt</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, temcu_uart.o(i.UART_SetTXEInterrupt))
-<BR><BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Uart_Send
-<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Uart2_Task
+<P><STRONG><a name="[7e]"></a>UART_SetTXEInterrupt</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, temcu_uart.o(i.UART_SetTXEInterrupt))
+<BR><BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Uart_Send
+<LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Uart2_Task
 </UL>
 
-<P><STRONG><a name="[2f]"></a>Uart2_Task</STRONG> (Thumb, 104 bytes, Stack size 24 bytes, temcu_uart.o(i.Uart2_Task))
+<P><STRONG><a name="[35]"></a>Uart2_Task</STRONG> (Thumb, 104 bytes, Stack size 24 bytes, temcu_uart.o(i.Uart2_Task))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = Uart2_Task
 </UL>
-<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetTXEInterrupt
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetTXEInterrupt
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> temcu_uart.o(i.TEMCU_Uart_Init)
 </UL>
-<P><STRONG><a name="[67]"></a>Hook</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, teevent.o(i.Hook))
-<BR><BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEEvent_Start
+<P><STRONG><a name="[85]"></a>checkThread</STRONG> (Thumb, 582 bytes, Stack size 16 bytes, tesw_eeprom.o(i.checkThread))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = checkThread
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Flash_Write
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Flash_Read
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Flash_EraseVerify
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Flash_Erase
+</UL>
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMainThread_SWEEPRom
 </UL>
 
-<P><STRONG><a name="[4b]"></a>ADC_CommonISR</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, ac780x_adc.o(i.ADC_CommonISR))
+<P><STRONG><a name="[86]"></a>copyThread</STRONG> (Thumb, 536 bytes, Stack size 16 bytes, tesw_eeprom.o(i.copyThread))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = copyThread &rArr; __ARM_common_switch8
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Flash_Write
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Flash_Read
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Flash_EraseVerify
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMCU_Flash_Erase
+</UL>
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEMainThread_SWEEPRom
+</UL>
+
+<P><STRONG><a name="[37]"></a>flashEraseEnd</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, tesw_eeprom.o(i.flashEraseEnd))
+<BR>[Address Reference Count : 1]<UL><LI> tesw_eeprom.o(i.TESW_EEPROM_Init)
+</UL>
+<P><STRONG><a name="[36]"></a>flashWriteEnd</STRONG> (Thumb, 100 bytes, Stack size 0 bytes, tesw_eeprom.o(i.flashWriteEnd))
+<BR>[Address Reference Count : 1]<UL><LI> tesw_eeprom.o(i.TESW_EEPROM_Init)
+</UL>
+<P><STRONG><a name="[38]"></a>flashcheckEnd</STRONG> (Thumb, 200 bytes, Stack size 0 bytes, tesw_eeprom.o(i.flashcheckEnd))
+<BR>[Address Reference Count : 1]<UL><LI> tesw_eeprom.o(i.TESW_EEPROM_Init)
+</UL>
+<P><STRONG><a name="[6f]"></a>Hook</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, teevent.o(i.Hook))
+<BR><BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEEvent_Start
+</UL>
+
+<P><STRONG><a name="[52]"></a>ADC_CommonISR</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, ac780x_adc.o(i.ADC_CommonISR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ADC_CommonISR
 </UL>
-<BR>[Called By]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC0_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC0_IRQHandler
 </UL>
 
-<P><STRONG><a name="[4d]"></a>DMA_ChannelHardRst</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, ac780x_dma.o(i.DMA_ChannelHardRst))
-<BR><BR>[Called By]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_ClearFlag
+<P><STRONG><a name="[54]"></a>DMA_ChannelHardRst</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, ac780x_dma.o(i.DMA_ChannelHardRst))
+<BR><BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_ClearFlag
 </UL>
 
-<P><STRONG><a name="[4e]"></a>GPIO_GetPendingExtIntSource</STRONG> (Thumb, 134 bytes, Stack size 8 bytes, ac780x_gpio.o(i.GPIO_GetPendingExtIntSource))
+<P><STRONG><a name="[55]"></a>GPIO_GetPendingExtIntSource</STRONG> (Thumb, 134 bytes, Stack size 8 bytes, ac780x_gpio.o(i.GPIO_GetPendingExtIntSource))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GPIO_GetPendingExtIntSource
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI9_15_IRQHandler
-<LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI3_8_IRQHandler
-<LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_IRQHandler
-<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI1_IRQHandler
-<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI0_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI9_15_IRQHandler
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI3_8_IRQHandler
+<LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_IRQHandler
+<LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI1_IRQHandler
+<LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI0_IRQHandler
 </UL>
 
-<P><STRONG><a name="[7a]"></a>TIMER_CommonISR</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, ac780x_timer.o(i.TIMER_CommonISR))
+<P><STRONG><a name="[94]"></a>TIMER_CommonISR</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, ac780x_timer.o(i.TIMER_CommonISR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = TIMER_CommonISR
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Channel3_IRQHandler
-<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Channel2_IRQHandler
-<LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Channel1_IRQHandler
-<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Channel0_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Channel3_IRQHandler
+<LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Channel2_IRQHandler
+<LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Channel1_IRQHandler
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Channel0_IRQHandler
 </UL>
 
-<P><STRONG><a name="[80]"></a>TIMER_SetChannel</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, ac780x_timer.o(i.TIMER_SetChannel))
-<BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Init
+<P><STRONG><a name="[9a]"></a>TIMER_SetChannel</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, ac780x_timer.o(i.TIMER_SetChannel))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Init
 </UL>
 
-<P><STRONG><a name="[7e]"></a>TIMER_SetInterrupt</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, ac780x_timer.o(i.TIMER_SetInterrupt))
-<BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Init
+<P><STRONG><a name="[98]"></a>TIMER_SetInterrupt</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, ac780x_timer.o(i.TIMER_SetInterrupt))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Init
 </UL>
 
-<P><STRONG><a name="[7d]"></a>TIMER_SetLinkMode</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, ac780x_timer.o(i.TIMER_SetLinkMode))
-<BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Init
+<P><STRONG><a name="[97]"></a>TIMER_SetLinkMode</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, ac780x_timer.o(i.TIMER_SetLinkMode))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Init
 </UL>
 
-<P><STRONG><a name="[7f]"></a>__NVIC_DisableIRQ</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, ac780x_timer.o(i.__NVIC_DisableIRQ))
-<BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Init
+<P><STRONG><a name="[99]"></a>__NVIC_DisableIRQ</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, ac780x_timer.o(i.__NVIC_DisableIRQ))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Init
 </UL>
 
-<P><STRONG><a name="[85]"></a>UART_EnableDMA</STRONG> (Thumb, 96 bytes, Stack size 0 bytes, ac780x_uart.o(i.UART_EnableDMA))
-<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
+<P><STRONG><a name="[9f]"></a>UART_EnableDMA</STRONG> (Thumb, 96 bytes, Stack size 0 bytes, ac780x_uart.o(i.UART_EnableDMA))
+<BR><BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
 </UL>
 
-<P><STRONG><a name="[81]"></a>UART_InterruptHandler</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, ac780x_uart.o(i.UART_InterruptHandler))
+<P><STRONG><a name="[9b]"></a>UART_InterruptHandler</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, ac780x_uart.o(i.UART_InterruptHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = UART_InterruptHandler
 </UL>
-<BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_IRQHandler
-<LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART1_IRQHandler
-<LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_IRQHandler
+<LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART1_IRQHandler
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_IRQHandler
 </UL>
 
-<P><STRONG><a name="[84]"></a>UART_Set2ByteFIFO</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, ac780x_uart.o(i.UART_Set2ByteFIFO))
-<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
+<P><STRONG><a name="[9e]"></a>UART_Set2ByteFIFO</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, ac780x_uart.o(i.UART_Set2ByteFIFO))
+<BR><BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
 </UL>
 
-<P><STRONG><a name="[60]"></a>SysTickDelay</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, system_ac780x.o(i.SysTickDelay))
+<P><STRONG><a name="[67]"></a>SysTickDelay</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, system_ac780x.o(i.SysTickDelay))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SysTickDelay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
-<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickRepeatDelay
+<BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickRepeatDelay
 </UL>
 
-<P><STRONG><a name="[5f]"></a>SysTickRepeatDelay</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, system_ac780x.o(i.SysTickRepeatDelay))
+<P><STRONG><a name="[66]"></a>SysTickRepeatDelay</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, system_ac780x.o(i.SysTickRepeatDelay))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SysTickRepeatDelay &rArr; SysTickDelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickDelay
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickDelay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
-</UL>
-
-<P><STRONG><a name="[91]"></a>_fadd1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, faddsub.o(x$fpl$fadd), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fsub
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_frsb
+<BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mdelay
 </UL>
 
-<P><STRONG><a name="[8f]"></a>_fsub1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, faddsub.o(x$fpl$fsub), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_frsb
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fadd
+<P><STRONG><a name="[b9]"></a>_fadd1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, faddsub.o(x$fpl$fadd), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fsub
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_frsb
+</UL>
+
+<P><STRONG><a name="[b7]"></a>_fsub1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, faddsub.o(x$fpl$fsub), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_frsb
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fadd
 </UL>
 <P>
 <H3>
 Undefined Global Symbols
 </H3>
-<P><STRONG><a name="[49]"></a>_call_atexit_fns</STRONG> (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
-<BR><BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+<P><STRONG><a name="[50]"></a>_call_atexit_fns</STRONG> (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
+<BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 </UL>
 <HR></body></html>

@@ -418,7 +418,15 @@ static void flashcheckEnd(TEFLASH_Addr addr,TEMCU_FLASH_StatusType res)
 
 TESW_EEPROM_StatusType TESW_EEPROM_Read(TESWEEPROM_Addr addr,uint16_t *data)
 {  
-		uint32_t temp_addr;
+    uint32_t temp_addr;
+    if(1 == st_blockCopy_s.lock || 1 == st_blockCheck_s.lock)
+    {
+        return TESWEEPROM_STATUS_BUSY;
+    }
+    if(NULL == st_eeprom_s.program || 0 == st_eeprom_s.program->_status._type._unlock)
+    {
+        return TESWEEPROM_STATUS_ERROR;
+    }
     for(temp_addr = st_eeprom_s.program->insertAddr-SWEEPROM_SIZE_DATA;
     temp_addr >= st_eeprom_s.program->statrtAddr;
     temp_addr -= SWEEPROM_SIZE_DATA)
@@ -431,7 +439,6 @@ TESW_EEPROM_StatusType TESW_EEPROM_Read(TESWEEPROM_Addr addr,uint16_t *data)
             return TESWEEPROM_STATUS_OK;
         }
     }
-    *data = 0;
     return TESWEEPROM_STATUS_READ_EMPTY;
 }
 
@@ -453,6 +460,22 @@ TESW_EEPROM_StatusType TESW_EEPROM_Write(TESWEEPROM_Addr addr,uint16_t data)
         return TESWEEPROM_STATUS_OK;
     }
     return TESWEEPROM_STATUS_ERROR;    
+}
+
+void TESW_EEPROM_EraseBlock1(void)
+{
+    if(TEMCU_FLASH_STATUS_OK == TEMCU_Flash_Erase(block1.baseAddr))
+    {
+        block1._flashctrl._type._erase = 1;
+    }
+}
+
+void TESW_EEPROM_EraseBlock2(void)
+{
+    if(TEMCU_FLASH_STATUS_OK == TEMCU_Flash_Erase(block2.baseAddr))
+    {
+        block2._flashctrl._type._erase = 1;
+    }
 }
 
 void TESW_EEPROM_Init(void)

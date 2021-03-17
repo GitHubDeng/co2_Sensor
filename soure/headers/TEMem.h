@@ -2,6 +2,6 @@
 
 #include "TETypes.h"
 
-void TEMem_Syn(void);
+void TEMem_Init(void);
 
 

@@ -17,6 +17,9 @@ typedef enum
 TESW_EEPROM_StatusType TESW_EEPROM_Read(TESWEEPROM_Addr addr,uint16_t *data);
 TESW_EEPROM_StatusType TESW_EEPROM_Write(TESWEEPROM_Addr addr,uint16_t data);
 
+void TESW_EEPROM_EraseBlock1(void);
+void TESW_EEPROM_EraseBlock2(void);
+
 void TESW_EEPROM_Init(void);
 void TEMainThread_SWEEPRom(void);
 

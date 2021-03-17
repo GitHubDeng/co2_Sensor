@@ -8,6 +8,7 @@
 ".\objects\temcu_uart.o"
 ".\objects\tesw_eeprom.o"
 ".\objects\teevent.o"
+".\objects\teco2_core.o"
 ".\objects\main.o"
 ".\objects\tecom.o"
 ".\objects\tecrc16_modbus.o"
@@ -26,6 +27,6 @@
 ".\objects\startup_ac780x.o"
 ".\objects\system_ac780x.o"
 --strict --scatter ".\Objects\CO2_Sensor.sct"
---summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\CO2_Sensor.map" -o .\Objects\CO2_Sensor.axf
